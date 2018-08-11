@@ -27,15 +27,15 @@ function Flic() {
  *  - options.error: called on function error
  */
 Flic.prototype.init = function(appId, appSecret, appName, options) {
-    console.log('Flic.js: init');
+    console.log('Flic.js: init', appId, appSecret, appName, options);
 
-    exec(options.success, options.error, 'Flic', 'init', [
-        {
-            appId: appId,
-            appSecret: appSecret,
-            appName: appName
-        }
-    ]);
+    // exec(options.success, options.error, 'Flic', 'init', [
+    //     {
+    //         appId: appId,
+    //         appSecret: appSecret,
+    //         appName: appName
+    //     }
+    // ]);
 };
 
 /**
